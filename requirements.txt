@@ -1,0 +1,16 @@
+# Core ML Framework (Huawei Ascend NPU)
+mindspore
+mindcv
+
+# Data & Numerics
+numpy
+
+# Visualization
+matplotlib
+seaborn
+
+# ML Evaluation Metrics
+scikit-learn
+
+# OBS / ModelArts Storage (Huawei Cloud)
+moxing-framework
