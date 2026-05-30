@@ -4,7 +4,7 @@
 
 This repository contains the implementation of **DermaLens**, an AI-based skin disease detection system designed for edge deployment using Huawei technologies.
 
-DermaLens uses a **ResNet50 + MobileNetV2 ensemble** trained on 14 skin disease classes, designed to run on Huawei Ascend NPUs (ModelArts) and exported for edge deployment via RKNN on Orange Pi.
+DermaLens uses a **ResNet50 + MobileNetV2 ensemble** trained on 14 skin disease classes, designed to run on Huawei Ascend NPUs (ModelArts) and exported for edge deployment on Orange Pi.
 
 This README focuses on **how to reproduce the model training and inference pipeline**.
 
