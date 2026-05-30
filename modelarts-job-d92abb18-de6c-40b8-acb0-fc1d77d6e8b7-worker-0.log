@@ -1,0 +1,887 @@
+time="2026-04-09T07:51:53+08:00" level=info msg="init logger successfully" file="init.go:82" Command=bootstrap/init Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service
+time="2026-04-09T07:51:53+08:00" level=info msg="current user 1102:1102" file="init.go:84" Command=bootstrap/init Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service
+time="2026-04-09T07:51:54+08:00" level=info msg="report event InitStart success" file="event.go:112" Command=bootstrap/init Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service
+time="2026-04-09T07:51:54+08:00" level=info msg="init command: bash /home/ma-user/training/init.sh 's3://dermalens/code/' ''" file="init.go:198" Command=bootstrap/init Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service
+time="2026-04-09T07:51:54+08:00" level=info msg="scc is already installed, skipping this step..." Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:54+08:00" level=info msg="[init] toolkit_obs_upload_pid = 62" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:54+08:00" level=info msg="[init] running at 2026-04-09-07:51:54" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:54+08:00" level=info msg="[init] ip of the pod: 172.16.0.79" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:54+08:00" level=info msg="[init] try to generate pip config" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:54+08:00" level=info msg="[detect] init container detect start" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:54+08:00" level=info msg="[task]Detect item: disk-size cache" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:54+08:00" level=info msg="local dir = /home/ma-user/modelarts/log/" file="upload.go:262" Command=obs/upload Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service Task=
+time="2026-04-09T07:51:54+08:00" level=info msg="obs dir = s3://modelarts-training-log-ap-southeast-1/d92abb18-de6c-40b8-acb0-fc1d77d6e8b7/worker-0" file="upload.go:265" Command=obs/upload Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service Task=
+time="2026-04-09T07:51:54+08:00" level=info msg="num of workers = 8" file="upload.go:270" Command=obs/upload Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service Task=
+time="2026-04-09T07:51:54+08:00" level=info msg="start the periodic upload task, upload Period = 5 seconds " file="upload.go:281" Command=obs/upload Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service Task=
+time="2026-04-09T07:51:54+08:00" level=info msg="[detect] code: 0, message: ok, item: disk-size cache" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:54+08:00" level=info msg="[task]Detect item: disk-size root" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:54+08:00" level=info msg="[detect] code: 0, message: ok, item: disk-size root" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:54+08:00" level=info msg="[task]Detect item: disk-size shm" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:54+08:00" level=info msg="[detect] code: 0, message: ok, item: disk-size shm" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:54+08:00" level=info msg="report event InitContainerDetectFinish success" file="event.go:112" Command=report Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service
+time="2026-04-09T07:51:55+08:00" level=info msg="[init] autosearch_path is empty, skip the autosearch download" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:55+08:00" level=info msg="[init] start to download the code" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:55+08:00" level=info msg="[init] code_url: s3://dermalens/code/" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:55+08:00" level=info msg="[init] modelarts_downloader_job_pid = 474" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:56+08:00" level=info msg="Main: modelarts-downloader starting with Namespace(recursive=True, skip_creating_dir=False, type='common', verbose=False, trace=False, src='s3://dermalens/code/', dst='./')" Component=PythonScripts Platform=ModelArts-Service
+[ModelArts Service Log]2026-04-09 07:51:56,473 - file_io.py[line:1680] - INFO: Multiprocessing connection patch for bpo-17560 not applied, not an applicable Python version: 3.9.9 (main, Jun 19 2024, 02:50:21) 
+[GCC 10.3.1]
+[ModelArts Service Log]2026-04-09 07:51:56,514 - file_io.py[line:3397] - INFO: List OBS time cost: 0.05 seconds.
+[ModelArts Service Log]2026-04-09 07:51:56,555 - file_io.py[line:3443] - INFO: Copy parallel total time cost: 0.09 seconds.
+time="2026-04-09T07:51:56+08:00" level=info msg="[init] code is now in /home/ma-user/modelarts/user-job-dir" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:56+08:00" level=info msg="[init] download the code use 0.644s" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:56+08:00" level=info msg="report event DownloadCodeSuccess success" file="event.go:112" Command=report Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service
+time="2026-04-09T07:51:56+08:00" level=info msg="[init] record_dir is empty, skip the code upload" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:56+08:00" level=info msg="[ModelArts Service Log][init]engine type is: pytorch" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:56+08:00" level=info msg="[ModelArts Service Log][init]python version: 3" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:56+08:00" level=info msg="[init] inputs_handler_job_pid = 537" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:57+08:00" level=info msg="download input [data_url] start" Component=PythonScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:57+08:00" level=info msg="caching the content of [data_url] inputs" Component=PythonScripts Platform=ModelArts-Service
+time="2026-04-09T07:51:57+08:00" level=info msg="Main: modelarts-downloader starting with Namespace(recursive=True, skip_creating_dir=True, type='common', verbose=False, trace=False, src='s3://dermalens/dermalens_dataset/', dst='./')" Component=PythonScripts Platform=ModelArts-Service
+[ModelArts Service Log]2026-04-09 07:51:57,813 - file_io.py[line:2028] - INFO: Listing OBS: 1000
+[ModelArts Service Log]2026-04-09 07:51:57,902 - file_io.py[line:2028] - INFO: Listing OBS: 2000
+[ModelArts Service Log]2026-04-09 07:51:57,989 - file_io.py[line:2028] - INFO: Listing OBS: 3000
+[ModelArts Service Log]2026-04-09 07:51:58,075 - file_io.py[line:2028] - INFO: Listing OBS: 4000
+[ModelArts Service Log]2026-04-09 07:51:58,162 - file_io.py[line:2028] - INFO: Listing OBS: 5000
+[ModelArts Service Log]2026-04-09 07:51:58,248 - file_io.py[line:2028] - INFO: Listing OBS: 6000
+[ModelArts Service Log]2026-04-09 07:51:58,341 - file_io.py[line:2028] - INFO: Listing OBS: 7000
+[ModelArts Service Log]2026-04-09 07:51:58,431 - file_io.py[line:2028] - INFO: Listing OBS: 8000
+[ModelArts Service Log]2026-04-09 07:51:58,485 - file_io.py[line:2028] - INFO: Listing OBS: 9000
+[ModelArts Service Log]2026-04-09 07:51:58,495 - file_io.py[line:1680] - INFO: Multiprocessing connection patch for bpo-17560 not applied, not an applicable Python version: 3.9.9 (main, Jun 19 2024, 02:50:21) 
+[GCC 10.3.1]
+[ModelArts Service Log]2026-04-09 07:51:58,660 - file_io.py[line:1821] - INFO: Listing OBS: 1000
+[ModelArts Service Log]2026-04-09 07:51:58,736 - file_io.py[line:1821] - INFO: Listing OBS: 2000
+[ModelArts Service Log]2026-04-09 07:51:58,827 - file_io.py[line:1821] - INFO: Listing OBS: 3000
+[ModelArts Service Log]2026-04-09 07:51:58,833 - file_io.py[line:1821] - INFO: Listing OBS: 4000
+[ModelArts Service Log]2026-04-09 07:51:58,853 - file_io.py[line:1821] - INFO: Listing OBS: 5000
+[ModelArts Service Log]2026-04-09 07:51:58,859 - file_io.py[line:1821] - INFO: Listing OBS: 6000
+[ModelArts Service Log]2026-04-09 07:51:58,872 - file_io.py[line:1821] - INFO: Listing OBS: 7000
+[ModelArts Service Log]2026-04-09 07:51:58,966 - file_io.py[line:1821] - INFO: Listing OBS: 8000
+[ModelArts Service Log]2026-04-09 07:51:59,005 - file_io.py[line:1821] - INFO: Listing OBS: 9000
+[ModelArts Service Log]2026-04-09 07:51:59,044 - file_io.py[line:3397] - INFO: List OBS time cost: 0.55 seconds.
+time="2026-04-09T07:51:59+08:00" level=info msg="MA_OUTPUT_PRELOAD_SUFFIX: ." file="preload.go:27" Command=obs/upload Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service Task=
+time="2026-04-09T07:51:59+08:00" level=info msg="modelarts output channel preload to memarts switch is: false." file="preload.go:40" Command=obs/upload Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service Task=
+[ModelArts Service Log]2026-04-09 07:52:01,868 - file_io.py[line:3463] - INFO: 1000/9526
+[ModelArts Service Log]2026-04-09 07:52:04,662 - file_io.py[line:3463] - INFO: 2000/9526
+[ModelArts Service Log]2026-04-09 07:52:07,364 - file_io.py[line:3463] - INFO: 3000/9526
+[ModelArts Service Log]2026-04-09 07:52:10,138 - file_io.py[line:3463] - INFO: 4000/9526
+[ModelArts Service Log]2026-04-09 07:52:12,922 - file_io.py[line:3463] - INFO: 5000/9526
+[ModelArts Service Log]2026-04-09 07:52:15,643 - file_io.py[line:3463] - INFO: 6000/9526
+[ModelArts Service Log]2026-04-09 07:52:18,360 - file_io.py[line:3463] - INFO: 7000/9526
+[ModelArts Service Log]2026-04-09 07:52:21,140 - file_io.py[line:3463] - INFO: 8000/9526
+[ModelArts Service Log]2026-04-09 07:52:23,825 - file_io.py[line:3463] - INFO: 9000/9526
+[ModelArts Service Log]2026-04-09 07:52:25,328 - file_io.py[line:3443] - INFO: Copy parallel total time cost: 26.84 seconds.
+time="2026-04-09T07:52:25+08:00" level=info msg="cache the content of [data_url] inputs successfully" Component=PythonScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:25+08:00" level=info msg="it can be accessed at local dir [/home/ma-user/modelarts/inputs/data_url_0]" Component=PythonScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:25+08:00" level=info msg="report event DownloadInputSuccess success" file="event.go:112" Command=report Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service
+time="2026-04-09T07:52:25+08:00" level=info msg="download input [pretrained_url] start" Component=PythonScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:25+08:00" level=info msg="caching the content of [pretrained_url] inputs" Component=PythonScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:26+08:00" level=info msg="Main: modelarts-downloader starting with Namespace(recursive=True, skip_creating_dir=True, type='common', verbose=False, trace=False, src='s3://dermalens/pretrained/', dst='./')" Component=PythonScripts Platform=ModelArts-Service
+[ModelArts Service Log]2026-04-09 07:52:26,129 - file_io.py[line:1680] - INFO: Multiprocessing connection patch for bpo-17560 not applied, not an applicable Python version: 3.9.9 (main, Jun 19 2024, 02:50:21) 
+[GCC 10.3.1]
+[ModelArts Service Log]2026-04-09 07:52:26,159 - file_io.py[line:3397] - INFO: List OBS time cost: 0.04 seconds.
+[ModelArts Service Log]2026-04-09 07:52:26,571 - file_io.py[line:3443] - INFO: Copy parallel total time cost: 0.45 seconds.
+time="2026-04-09T07:52:26+08:00" level=info msg="cache the content of [pretrained_url] inputs successfully" Component=PythonScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:26+08:00" level=info msg="it can be accessed at local dir [/home/ma-user/modelarts/inputs/pretrained_url_1]" Component=PythonScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:26+08:00" level=info msg="report event DownloadInputSuccess success" file="event.go:112" Command=report Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service
+time="2026-04-09T07:52:27+08:00" level=info msg="mkdir for local output dir" Component=PythonScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:27+08:00" level=info msg="output-handler finalized" Component=PythonScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:27+08:00" level=info msg="there is no need to download obs channels file" file="download_by_channels.go:27" Command=obs/download_by_channels Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service
+time="2026-04-09T07:52:27+08:00" level=info msg="[init] exiting at 2026-04-09-07:52:27" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:27+08:00" level=info msg="[init] stop toolkit_obs_upload_pid = 62 by signal SIGTERM" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:27+08:00" level=info msg="obs client ctx is closed" file="upload.go:206" Command=obs/upload Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service Task=
+time="2026-04-09T07:52:27+08:00" level=info msg="the final upload is in progress..." file="upload.go:294" Command=obs/upload Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service Task=
+time="2026-04-09T07:52:27+08:00" level=info msg="start upload output at 2026-04-09T07:52:27+08:00" file="upload.go:297" Command=obs/upload Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service Task=
+time="2026-04-09T07:52:27+08:00" level=info msg="[UploadSuccess] total files num: [5], total files size: [0.02 MB], cost time: [40.724055ms]" file="upload.go:303" Command=obs/upload Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service Task=
+time="2026-04-09T07:52:27+08:00" level=info msg="[init] toolkit_obs_upload 62 ret_code is 0" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:27+08:00" level=info msg="[init] exit with 0" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:27+08:00" level=info msg="local dir = /home/ma-user/modelarts/log/" file="upload.go:262" Command=bootstrap/init Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service Task=
+time="2026-04-09T07:52:27+08:00" level=info msg="obs dir = s3://modelarts-training-log-ap-southeast-1/d92abb18-de6c-40b8-acb0-fc1d77d6e8b7/worker-0" file="upload.go:265" Command=bootstrap/init Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service Task=
+time="2026-04-09T07:52:27+08:00" level=info msg="num of workers = 8" file="upload.go:270" Command=bootstrap/init Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service Task=
+time="2026-04-09T07:52:27+08:00" level=info msg="MA_OUTPUT_PRELOAD_SUFFIX: ." file="preload.go:27" Command=bootstrap/init Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service Task=
+time="2026-04-09T07:52:27+08:00" level=info msg="modelarts output channel preload to memarts switch is: false." file="preload.go:40" Command=bootstrap/init Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service Task=
+time="2026-04-09T07:52:27+08:00" level=info msg="[init] container modelarts-training-init exit with exit code 0" file="bootstrap.go:348" Command=bootstrap/init Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service
+time="2026-04-09T07:52:27+08:00" level=info msg="bootstrap is exiting with exit code 0" file="bootstrap.go:359" Command=bootstrap/init Component=ma-training-toolkit Container=modelarts-training-init Platform=ModelArts-Service
+time="2026-04-09T07:52:28+08:00" level=info msg="init logger successfully" file="run_train.go:157" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:28+08:00" level=info msg="task-training container update heartbeat file started" file="heartbeat.go:109" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:28+08:00" level=info msg="the core file size limit is unlimited\n" file="core_file_collect.go:34" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:28+08:00" level=info msg="create core file symbolic link to /home/ma-user/modelarts/log successful" file="core_file_collect.go:68" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:28+08:00" level=info msg="Waiting for SCC server start." file="run_train.go:757" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:28+08:00" level=info msg="init logger successfully" file="upload.go:87" Command=bootstrap/upload Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T07:52:28+08:00" level=info msg="start checking secret refresh time." file="secret.go:45" Command=bootstrap/upload Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T07:52:28+08:00" level=info msg="current user 1102:1102" file="upload.go:95" Command=bootstrap/upload Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T07:52:28+08:00" level=info msg="[sidecar] start to upload training outputs and log" file="upload.go:97" Command=bootstrap/upload Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T07:52:28+08:00" level=info msg="obs download task in progress, local dir: /home/ma-user/training/runtime-scripts-v2/sidecar-container/, obs dir: /modelarts-training-log-ap-southeast-1/train-knowledge, num workers: 1" file="download.go:155" Command=bootstrap/upload Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=ma_knowledge_download
+time="2026-04-09T07:52:28+08:00" level=info msg="obs download complete, successful: 0, failed: 0, skipped: 0, total downloaded bytes: 0, total elapsed time: 0s" file="download.go:192" Command=bootstrap/upload Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=ma_knowledge_download
+time="2026-04-09T07:52:28+08:00" level=info msg="upload command: /home/ma-user/training/sidecar.sh" file="upload.go:122" Command=bootstrap/upload Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T07:52:28+08:00" level=info msg="watch periodically task-training container heartbeat file started, periodic interval：heartbeat update:600s, heartbeat check:600s, heartbeat timeout:1800s" file="heartbeat.go:54" Command=bootstrap/upload Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T07:52:28+08:00" level=info msg="scc is already installed, skipping this step..." Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:28+08:00" level=info msg="[sidecar] running at 2026-04-09-07:52:28" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:28+08:00" level=info msg="[sidecar] scc server pid = 56" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:29+08:00" level=info msg="[sidecar] will upload using 8 workers" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:29+08:00" level=info msg="[sidecar] toolkit_obs_upload_by_channels_pid = 743" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:29+08:00" level=info msg="[sidecar] fault diagnose starting" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:29+08:00" level=info msg="[sidecar] waiting for training complete" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:29+08:00" level=info msg="skip read knowledge file on path: /home/ma-user/training/runtime-scripts-v2/sidecar-container/diagnose_knowledge.json" file="analyzer.go:182" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T07:52:29+08:00" level=info msg="analyzer knowledge comes from [/home/ma-user/training/runtime-scripts-v2/sidecar-container/diagnose_knowledge_default.json]" file="analyzer.go:172" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T07:52:29+08:00" level=info msg="diagnosis http server listening at 127.0.0.1:9627" file="analyzer.go:435" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T07:52:29+08:00" level=info msg="Starting SCC server on 127.0.0.1:44997" file="server.go:56" Command=scc-server Component=ma-scc-server Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T07:52:29+08:00" level=info msg="local dir = /home/ma-user/modelarts/log/" file="upload.go:262" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=log_url
+time="2026-04-09T07:52:29+08:00" level=info msg="obs dir = obs://dermalens/logTraining//d92abb18-de6c-40b8-acb0-fc1d77d6e8b7/worker-0" file="upload.go:265" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=log_url
+time="2026-04-09T07:52:29+08:00" level=info msg="num of workers = 8" file="upload.go:270" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=log_url
+time="2026-04-09T07:52:29+08:00" level=info msg="start the periodic upload task, upload Period = 30 seconds " file="upload.go:281" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=log_url
+time="2026-04-09T07:52:29+08:00" level=info msg="local dir = /home/ma-user/modelarts/outputs/train_url_0/" file="upload.go:262" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=train_url
+time="2026-04-09T07:52:29+08:00" level=info msg="obs dir = s3://dermalens/Output_Path/" file="upload.go:265" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=train_url
+time="2026-04-09T07:52:29+08:00" level=info msg="num of workers = 8" file="upload.go:270" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=train_url
+time="2026-04-09T07:52:29+08:00" level=info msg="start the periodic upload task, upload Period = 30 seconds " file="upload.go:281" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=train_url
+time="2026-04-09T07:52:29+08:00" level=info msg="local dir = /home/ma-user/modelarts/log/" file="upload.go:262" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=srt_log_collection
+time="2026-04-09T07:52:29+08:00" level=info msg="obs dir = s3://modelarts-training-log-ap-southeast-1/d92abb18-de6c-40b8-acb0-fc1d77d6e8b7/worker-0" file="upload.go:265" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=srt_log_collection
+time="2026-04-09T07:52:29+08:00" level=info msg="enable append upload mode" file="upload.go:268" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=srt_log_collection
+time="2026-04-09T07:52:29+08:00" level=info msg="num of workers = 8" file="upload.go:270" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=srt_log_collection
+time="2026-04-09T07:52:29+08:00" level=info msg="start the periodic upload task, upload Period = 5 seconds " file="upload.go:281" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=srt_log_collection
+time="2026-04-09T07:52:31+08:00" level=info msg="SCC server has been init, training continue." file="run_train.go:775" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="current user name: ma-user" file="image_check.go:156" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="current uid: 1102" file="image_check.go:157" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="current gid: 1102" file="image_check.go:158" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="image check passed" file="image_check.go:90" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="hbm leak pre-check is not enabled" file="run_train.go:229" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="starting MAOS agent metrics exporter" file="metrics_exporter.go:396" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="report event TrainingStart success" file="event.go:112" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="pre train command: mkdir -p ~/.pip && echo -e \"[global]\\ntrusted-host = repo.myhuaweicloud.com\\nindex-url = http://repo.myhuaweicloud.com/repository/pypi/simple/\\ntimeout = 120\" > ~/.pip/pip.conf;" file="run_train.go:1119" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="initializing debug mode runtime environment" file="run_train.go:1520" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="initializing sshd, user home path: /home/ma-user" file="ssh.go:23" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="initializing user ssh dir /home/ma-user/.ssh" file="ssh.go:42" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="successfully initialized user ssh dir /home/ma-user/.ssh " file="ssh.go:56" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="initializing ssh environment file /home/ma-user/.ssh/environment" file="ssh.go:64" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="successfully initialized ssh environment file /home/ma-user/.ssh/environment " file="ssh.go:73" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="successfully init sshd" file="ssh.go:35" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="successfully initialized debug mode runtime environment" file="run_train.go:1528" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="pre-training script start" file="run_train.go:1206" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="pre runtime info collection started" file="run_train.go:1391" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="skip collecting pfc_enabled, reason: not an ascend job, no need to collect" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="skip collecting ranktable, reason: empty results" file="collector.go:198" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="skip collecting ib_dev_to_net_dev, reason: not an infiniband job" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="skip collecting ethernet_qos, reason: not an infiniband job" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="skip collecting hccn_tool, reason: not an ascend job, no need to collect" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="skip collecting nfs_mount_path_check, reason: MA_NFS_MOUNT_VOLUMES env is not found" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="skip collecting npu_ecc_info, reason: not a NPU job" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="skip collecting ascend_dmi, reason: not an ascend job, no need to collect" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="skip collecting gpu_info, reason: not a gpu job" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="skip collecting Tor, reason: empty results" file="collector.go:198" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="skip collecting npu_driver_version, reason: not a NPU job" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="skip collecting cudnn_version, reason: not a gpu job" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="skip collecting npu_info, reason: not a NPU job" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="skip collecting nccl_version, reason: not a gpu job" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="skip collecting cuda_version, reason: not a gpu job" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="skip collecting gpu_driver_version, reason: not a gpu job" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="skip collecting ib_gids, reason: not an infiniband job" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="skip collecting ib_stats, reason: not an infiniband job" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="skip collecting gpu_topo, reason: not a gpu job" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="skip collecting ofed_info_output, reason: not an infiniband job" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="skip collecting udp_status, reason: not an ascend job, no need to collect" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="skip collecting modules, reason: run command lsmod failed, err: failed to execute command: exit status 127, stderr: /bin/bash: lsmod: command not found\n" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+chmod: cannot access '/home/ma-user/modelarts/user-job-dir/dermalens_dataset/*.py': No such file or directory
+time="2026-04-09T07:52:31+08:00" level=warning msg="pre-training script exited with exit code 1" file="run_train.go:1229" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="pre-training script file successfully, time used: 5.214792ms" file="run_train.go:1232" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="report event PretrainingFinish success" file="event.go:112" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="run command: bash /home/ma-user/modelarts/run/run_train_v2.sh '/home/ma-user/modelarts/user-job-dir/code/mobileresnet_Hongkong - CPU.py' '--NUM_CLASSES=14' '--NUM_EPOCHS=5' '--BATCH_SIZE=4' '--LEARNING_RATE=0.001' '--data_url=/home/ma-user/modelarts/inputs/data_url_0/' '--pretrained_url=/home/ma-user/modelarts/inputs/pretrained_url_1/' '--train_url=/home/ma-user/modelarts/outputs/train_url_0/' " file="run_train.go:661" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="auto set GLOO_SOCKET_IFNAME env: GLOO_SOCKET_IFNAME=eth0" file="run_train.go:532" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="failed to read user policy config: env MA_RECOVER_POLICY not exists or empty, will get recover policy from envs" file="policy.go:727" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="runtime policy to be applied: {\"api_version\":\"0.0.1\",\"actions\":{\"ascend_log_diag_when_fail\":{\"max_num\":32767},\"exit\":{\"max_num\":32767}},\"exception_handle\":[{\"exception\":{\"type\":\"npu_fault_code_caused_repeatedly_by_user\"},\"handle_action\":\"job_reschedule\",\"priority\":-48},{\"exception\":{\"type\":\"npu_fault_code_caused_repeatedly\"},\"handle_action\":\"job_reschedule_with_taint\",\"priority\":-49},{\"exception\":{\"type\":\"npu_fault_code\"},\"handle_action\":\"npu_proc_restart\",\"priority\":-50},{\"exception\":{\"type\":\"gpu_reset_configmap\"},\"handle_action\":\"gpu_proc_restart\",\"priority\":-50},{\"exception\":{\"type\":\"custom_pattern\",\"value\":\"CUDA_ERROR_ECC_UNCORRECTABLE\"},\"handle_action\":\"gpu_proc_restart\",\"priority\":-50},{\"exception\":{\"type\":\"custom_pattern\",\"value\":\"uncorrectable ECC error\"},\"handle_action\":\"gpu_proc_restart\",\"priority\":-50},{\"exception\":{\"type\":\"gpu_smi\"},\"handle_action\":\"gpu_proc_restart\",\"priority\":-50},{\"exception\":{\"type\":\"exit_code\",\"value\":\"137\"},\"handle_action\":\"pod_reschedule\",\"priority\":-50},{\"exception\":{\"type\":\"ascend_diag_result\"},\"handle_action\":\"pod_reschedule\",\"priority\":-50},{\"exception\":{\"type\":\"instruct_start_fail\"},\"handle_action\":\"job_reschedule\",\"priority\":-50},{\"exception\":{\"type\":\"any_fail_term_for_ascend_log_diag\"},\"handle_action\":\"ascend_log_diag_when_fail\",\"priority\":-110}]}" file="policy.go:741" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event listener(name: listenAndServe) sync=false started" file="controller.go:173" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event listener(name: checkIn) sync=false started" file="controller.go:173" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=warning msg="[gpu driver version validator]skip collecting environment information, reason: GPUDriverVersion is empty, maybe it's not a GPU job" file="processor.go:81" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=warning msg="[npu driver version validator]skip collecting environment information, reason: NPUDriverVersion is empty, maybe it's not a NPU job" file="processor.go:81" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=warning msg="[nv_peer_mem module validator]skip collecting environment information, reason: incorrect modules format: , expected not empty" file="processor.go:81" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=warning msg="[firmware version validator]skip collecting environment information, reason: firmware version is empty" file="processor.go:81" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=warning msg="[ofed version validator]skip collecting environment information, reason: ofed version is empty" file="processor.go:81" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event listener(name: checkIn) sync=false exited" file="controller.go:170" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event(name: CheckedInEvent, msg: ) is being handled, len: 0" file="controller.go:122" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=warning msg="read file runningCount failed, err: open /home/ma-user/modelarts/log/runningCount: no such file or directory" file="handler.go:235" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="received check-in from task worker-0" file="handler.go:246" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="[consistency-validate] single-node job, skip the consistency validate." file="processor.go:96" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="http server listening at 172.16.0.79:13910" file="server.go:62" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="all task worker checked-in, will start training" file="handler.go:624" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event listener(name: watchGPUResetConfig) sync=false started" file="controller.go:173" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event listener(name: watchUserProcessHangStatus) sync=false started" file="controller.go:173" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="done handling event(name: CheckedInEvent, msg: ), started listeners: [startAndWait instructAllFollowersStart SystemAuxiliaryRoutines watchNPURecoverStatus watchNPUResetConfig watchGPUResetConfig watchUserProcessHangStatus watchAgentFaultCode watchDynamicProfiling StartMindRecoverServer watchGraceExit watchCoreDump watchSwitchNICConfig]" file="controller.go:136" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event listener(name: watchSwitchNICConfig) sync=false started" file="controller.go:173" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="start to watch switch_nic_config listener" file="listener.go:1453" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event listener(name: StartMindRecoverServer) sync=false started" file="controller.go:173" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event listener(name: watchGraceExit) sync=false started" file="controller.go:173" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event listener(name: watchGraceExit) sync=false exited" file="controller.go:170" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="mind_recover server start listen..." file="grpc_init.go:57" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event listener(name: SystemAuxiliaryRoutines) sync=false started" file="controller.go:173" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="auxiliary routine(name: TaskDynoMonitor) started" file="listener.go:1172" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="auxiliary routine(name: TaskDynoMonitor) exited" file="listener.go:1175" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="auxiliary routine(name: TaskCoreDump) started" file="listener.go:1172" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="auxiliary routine(name: TaskHangedDetect) started" file="listener.go:1172" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event listener(name: instructAllFollowersStart) sync=false started" file="controller.go:173" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event listener(name: instructAllFollowersStart) sync=false exited" file="controller.go:170" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="auxiliary routine(name: SwitchNICWatcher) started" file="listener.go:1172" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event listener(name: watchAgentFaultCode) sync=false started" file="controller.go:173" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event listener(name: watchNPURecoverStatus) sync=false started" file="controller.go:173" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event listener(name: watchNPURecoverStatus) sync=false exited" file="controller.go:170" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="auxiliary routine(name: TaskHangedDetect) exited" file="listener.go:1175" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event listener(name: watchDynamicProfiling) sync=false started" file="controller.go:173" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=error msg="create watcher for switch_nic_config failed, error: add dir /modelarts-job-d92abb18-de6c-40b8-acb0-fc1d77d6e8b7/maos-node-agent/ascend to switch_nic_config file watcher failed, error: permission denied" file="switch_nic_track.go:46" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event listener(name: watchGPUResetConfig) sync=false exited" file="controller.go:170" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="auxiliary routine(name: SwitchNICWatcher) exited" file="listener.go:1175" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event listener(name: watchNPUResetConfig) sync=false started" file="controller.go:173" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event listener(name: watchNPUResetConfig) sync=false exited" file="controller.go:170" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=error msg="try to listen agent fault code failed, err: add path /modelarts-job-d92abb18-de6c-40b8-acb0-fc1d77d6e8b7/maos-node-agent/metrics to maos-node-agent metric watcher failed, err: permission denied, skip listening, policy related to fault code may not work" file="listener.go:1034" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event listener(name: watchAgentFaultCode) sync=false exited" file="controller.go:170" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event listener(name: startAndWait) sync=false started" file="controller.go:173" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="event listener(name: watchCoreDump) sync=false started" file="controller.go:173" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="set env MA_INSTRUCT_TRAINING_PROC_START_TIME = 2026-04-09-07-52-31 successfully." file="utils.go:1036" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="add path /home/ma-user/modelarts/broadcast-command-config to dynamic profiling config file watcher sucessful" file="watcher.go:61" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="dynamic profiling config watcher is running, metric file path: /home/ma-user/modelarts/broadcast-command-config" file="watcher.go:70" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="cmd env: [CUDNN_VERSION=7.6.5.32 LD_LIBRARY_PATH=/usr/local/nvidia/lib:/usr/local/nvidia/lib64 MA_JOB_NAME=modelarts-job-d92abb18-de6c-40b8-acb0-fc1d77d6e8b7 MA_JOB_CONTINUOUS_HANG_RETRY_NUM=0 MA_ENGINE_VERSION=pytorch_1.8.0-cuda_10.2-py_3.7-ubuntu_18.04-x86_64 MA_NUM_HOSTS=1 MA_DEFAULT_DUMP_CORE_FILE_TO_OBS=true VC_WORKER_HOSTS=modelarts-job-d92abb18-de6c-40b8-acb0-fc1d77d6e8b7-worker-0.modelarts-job-d92abb18-de6c-40b8-acb0-fc1d77d6e8b7 VK_TASK_INDEX=0 HCCL_IF_BASE_PORT=64000 LANG=C.UTF-8 MA_SCRIPT_INTERPRETER= AOM_ENDPOINT=https://aom.ap-southeast-1.myhuaweicloud.com MA_MAX_BACKOFF=0 HOSTNAME=modelarts-job-d92abb18-de6c-40b8-acb0-fc1d77d6e8b7-worker-0 ENV_NAME=PyTorch-1.8 MA_IAM_USER_ID=1b6fec998f6f4ce69987bb6a9be2f680 MA_RESOURCE_KIND=Job MA_CURRENT_IP=172.16.0.79 MA_MOUNT_PATH=/home/ma-user/modelarts NVIDIA_VISIBLE_DEVICES=all MA_ENGINE_TYPE=pytorch MODELARTS_SCC_SERVICE_PORT=44997 MA_HOME=/home/ma-user KUBERNETES_PORT_443_TCP_PROTO=tcp KUBERNETES_PORT_443_TCP_ADDR=10.247.0.1 MA_S3_ENDPOINT=https://obs.ap-southeast-1.myhuaweicloud.com PIP_INDEX_URL=http://repo.myhuaweicloud.com/repository/pypi/simple/ MA_VJ_NAME=modelarts-job-d92abb18-de6c-40b8-acb0-fc1d77d6e8b7 MA_CODE_DIR=/home/ma-user/modelarts/user-job-dir/code MA_PIP_URL=http://repo.myhuaweicloud.com/repository/pypi/simple/ MA_LOG_ROTATION_ENABLED=false MA_TRAINING_CONTAINER_HEARTBEAT_WATCH_IS_ON=1 NCCL_VERSION=2.10.3 PIP_VERSION=20.3.3 MA_RUNTIME_INFO_COLLECTION=true MA_WORKING_DIR=/home/ma-user/modelarts/user-job-dir KUBERNETES_PORT=tcp://10.247.0.1:443 PWD=/home/ma-user HOME=/home/ma-user MA_CURRENT_HOST_IP=192.168.2.177 CES_ENDPOINT=https://ces.ap-southeast-1.myhuaweicloud.com S3_USE_HTTPS=1 MA_LOG_DIR=/home/ma-user/modelarts/log KUBERNETES_SERVICE_PORT_HTTPS=443 SITE_PACKAGES_PATH=/home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages KUBERNETES_PORT_443_TCP_PORT=443 IS_NEW_IMAGE_FRAMEWORK=true MA_JOB_CONTINUOUS_UNCONDITIONAL_RETRY_NUM=0 S3_ENDPOINT=https://obs.ap-southeast-1.myhuaweicloud.com SCC_CONFIG_PATH=/home/ma-user/modelarts/scc/conf_10x/scc.conf SFS_ENDPOINT=https://sfs-turbo.cn-north-7.myhuaweicloud.com LIBRARY_PATH=/usr/local/cuda/lib64/stubs: MA_CURRENT_INSTANCE_ID=f0c8b3c6-bb79-4ec0-b733-87cc6f839060 MA_USER_LOG_DIR_OBS=/dermalens/logTraining/ MA_SCC_PYTHON_ADAPTER=/home/ma-user/modelarts/scc MA_PIP_HOST=repo.myhuaweicloud.com NFS_ENDPOINT=https://sfs-turbo.ap-southeast-1.myhuaweicloud.com S3_VERIFY_SSL=0 PAAS_POD_ID=f0c8b3c6-bb79-4ec0-b733-87cc6f839060 KUBERNETES_PORT_443_TCP=tcp://10.247.0.1:443 MA_RESOURCE_API_VERSION=batch.volcano.sh/v1alpha1 MA_INPUTS={\"inputs\":[{\"name\":\"data_url\",\"local_dir\":\"/home/ma-user/modelarts/inputs/data_url_0\",\"access_method\":\"parameter\",\"remote\":{\"obs\":{\"obs_url\":\"s3://dermalens/dermalens_dataset/\"}}},{\"name\":\"pretrained_url\",\"local_dir\":\"/home/ma-user/modelarts/inputs/pretrained_url_1\",\"access_method\":\"parameter\",\"remote\":{\"obs\":{\"obs_url\":\"s3://dermalens/pretrained/\"}}}]}  VC_TASK_INDEX=0 MA_RESOURCE_PROVISIONER=modelarts_os VC_WORKER_NUM=1 MA_PROCESSES_EXIT_GRACE_PERIOD_SECONDS=0 CUDA_PKG_VERSION=10-2=10.2.89-1 CUDA_VERSION=10.2.89 MA_IAM_PROJECT_ID=063cf10b9f8026402ff0c0120327c186 MA_PYTHON_VERSION=3 NVIDIA_DRIVER_CAPABILITIES=compute,utility SHLVL=1 ANACONDA_DIR=/home/ma-user/anaconda3 MA_TERMINATION_GRACE_PERIOD_SECONDS=0 PYTHONPATH=:/usr/local/seccomponent/lib MA_OUTPUTS={\"outputs\":[{\"name\":\"train_url\",\"local_dir\":\"/home/ma-user/modelarts/outputs/train_url_0\",\"access_method\":\"parameter\",\"remote\":{\"obs\":{\"obs_url\":\"s3://dermalens/Output_Path/\"}},\"mode\":\"upload_periodically\",\"period\":30,\"prefetch_to_local\":false}]}  MA_DETECT_ITEM={\"disk_size_check\":1,\"dns_check\":1} MA_CURRENT_INSTANCE_NAME=modelarts-job-d92abb18-de6c-40b8-acb0-fc1d77d6e8b7-worker-0 NVIDIA_REQUIRE_CUDA=cuda>=10.2 brand=tesla,driver>=396,driver<397 brand=tesla,driver>=410,driver<411 brand=tesla,driver>=418,driver<419 brand=tesla,driver>=440,driver<441 KUBERNETES_SERVICE_PORT=443 MA_RUNTIME_RECOVER_SYS_PORT=13910 PIP_TRUSTED_HOST=repo.myhuaweicloud.com CREDENTIAL_PROFILES_FILE=/run/secrets/modelarts/user/config MA_JOB_DIR=/home/ma-user/modelarts/user-job-dir MA_TERMINATION_MESSAGE_PATH=/home/ma-user/modelarts/log/termination-log PATH=/home/ma-user/anaconda/bin:/home/ma-user/anaconda/bin:/home/ma-user/anaconda3/envs/PyTorch-1.8/bin:/usr/local/nvidia/bin:/usr/local/cuda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin MA_ENABLE_ASCEND_DEVICE_LOG_EXPORT=false MA_APIGW_ENDPOINT=https://modelarts.ap-southeast-1.myhuaweicloud.com MA_TRAINING_MOUNT_PATH=/modelarts-job-d92abb18-de6c-40b8-acb0-fc1d77d6e8b7 MA_CUSTOM_METRICS_EXPORTER_MAOS_AGENT_ON=true MA_TASK_NAME=worker MA_NAMESPACE=cloud-train-cpu-new-5fc6450946754317a3ea25d298255faa KUBERNETES_SERVICE_HOST=10.247.0.1 MA_TRAINING_CONTAINER_HEARTBEAT_WATCH_PERIOD_SECONDS=600 MA_CONTAINER_NAME=modelarts-training MA_CUSTOM_METRICS_EXPORTER_ON=false MA_CONSISTENCY_VALIDATE=true _=/home/ma-user/modelarts/ma-training-toolkit MA_NPU_SAMPLE_ROUTINE_DISABLED=true MA_JOB_START_TIME=1775692351 GLOO_SOCKET_IFNAME=eth0 MA_RUNNING_CNT=1 MA_INSTRUCT_TRAINING_PROC_START_TIME=2026-04-09-07-52-31 ASCEND_PROCESS_LOG_PATH= ASCEND_WORK_PATH= TORCH_HCCL_DEBUG_INFO_TEMP_FILE= MA_PROC_START_CNT=1 MA_SCHEDULE_CNT=1]" file="process.go:167" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="start command successfully, pid: 54, command: [bash -c bash /home/ma-user/modelarts/run/run_train_v2.sh '/home/ma-user/modelarts/user-job-dir/code/mobileresnet_Hongkong - CPU.py' '--NUM_CLASSES=14' '--NUM_EPOCHS=5' '--BATCH_SIZE=4' '--LEARNING_RATE=0.001' '--data_url=/home/ma-user/modelarts/inputs/data_url_0/' '--pretrained_url=/home/ma-user/modelarts/inputs/pretrained_url_1/' '--train_url=/home/ma-user/modelarts/outputs/train_url_0/' ]" file="process.go:172" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="current pid is not 1, so there is no need to turn on the zombie process cleanup" file="cleaner_unix.go:25" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="TCP_PORT: 9035" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="user: uid=1102(ma-user) gid=1102(ma-group) groups=1102(ma-group)" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="pwd: /home/ma-user" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="boot_file: /home/ma-user/modelarts/user-job-dir/code/mobileresnet_Hongkong - CPU.py" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="command: /home/ma-user/modelarts/user-job-dir/code/mobileresnet_Hongkong - CPU.py --NUM_CLASSES=14 --NUM_EPOCHS=5 --BATCH_SIZE=4 --LEARNING_RATE=0.001 --data_url=/home/ma-user/modelarts/inputs/data_url_0/ --pretrained_url=/home/ma-user/modelarts/inputs/pretrained_url_1/ --train_url=/home/ma-user/modelarts/outputs/train_url_0/" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:31+08:00" level=info msg="local_code_dir: /home/ma-user/modelarts/user-job-dir/code" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-09T07:52:32+08:00" level=info msg="pre runtime info collection finished" file="run_train.go:1407" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+Looking in indexes: http://repo.myhuaweicloud.com/repository/pypi/simple/
+Processing ./albumentations-0.4.6.tar.gz
+Requirement already satisfied: numpy>=1.11.1 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from albumentations==0.4.6) (1.17.0)
+Requirement already satisfied: scipy in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from albumentations==0.4.6) (1.5.2)
+Requirement already satisfied: imgaug>=0.4.0 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from albumentations==0.4.6) (0.4.0)
+Requirement already satisfied: PyYAML in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from albumentations==0.4.6) (5.1)
+Requirement already satisfied: opencv-python>=4.1.1 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from albumentations==0.4.6) (4.1.2.30)
+Requirement already satisfied: scikit-image>=0.14.2 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from imgaug>=0.4.0->albumentations==0.4.6) (0.18.3)
+Requirement already satisfied: Shapely in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from imgaug>=0.4.0->albumentations==0.4.6) (1.7.1)
+Requirement already satisfied: matplotlib in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from imgaug>=0.4.0->albumentations==0.4.6) (3.4.3)
+Requirement already satisfied: six in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from imgaug>=0.4.0->albumentations==0.4.6) (1.16.0)
+Requirement already satisfied: imageio in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from imgaug>=0.4.0->albumentations==0.4.6) (2.9.0)
+Requirement already satisfied: Pillow in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from imgaug>=0.4.0->albumentations==0.4.6) (6.2.0)
+Requirement already satisfied: tifffile>=2019.7.26 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from scikit-image>=0.14.2->imgaug>=0.4.0->albumentations==0.4.6) (2021.8.30)
+Requirement already satisfied: PyWavelets>=1.1.1 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from scikit-image>=0.14.2->imgaug>=0.4.0->albumentations==0.4.6) (1.1.1)
+Requirement already satisfied: networkx>=2.0 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from scikit-image>=0.14.2->imgaug>=0.4.0->albumentations==0.4.6) (2.6.3)
+Requirement already satisfied: pyparsing>=2.2.1 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from matplotlib->imgaug>=0.4.0->albumentations==0.4.6) (2.4.7)
+Requirement already satisfied: python-dateutil>=2.7 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from matplotlib->imgaug>=0.4.0->albumentations==0.4.6) (2.8.2)
+Requirement already satisfied: kiwisolver>=1.0.1 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from matplotlib->imgaug>=0.4.0->albumentations==0.4.6) (1.3.2)
+Requirement already satisfied: cycler>=0.10 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from matplotlib->imgaug>=0.4.0->albumentations==0.4.6) (0.10.0)
+DEPRECATION: Source distribution is being reinstalled despite an installed package having the same name and version as the installed package. pip 21.1 will remove support for this functionality. A possible replacement is use --force-reinstall. You can find discussion regarding this at https://github.com/pypa/pip/issues/8711.
+Building wheels for collected packages: albumentations
+  Building wheel for albumentations (setup.py): started
+  Building wheel for albumentations (setup.py): finished with status 'done'
+  Created wheel for albumentations: filename=albumentations-0.4.6-py3-none-any.whl size=65162 sha256=d8c3bc1f62b39db78330d0eb5e5ca2637b064e46dd7038988f91d1fde3d6ce89
+  Stored in directory: /tmp/pip-ephem-wheel-cache-30p8ax84/wheels/86/b9/1a/81ee8149f59e5514e29ccb11723b73d646649b43d1ecec644d
+Successfully built albumentations
+Installing collected packages: albumentations
+  Attempting uninstall: albumentations
+    Found existing installation: albumentations 0.4.6
+    Uninstalling albumentations-0.4.6:
+      Successfully uninstalled albumentations-0.4.6
+Successfully installed albumentations-0.4.6
+WARNING: You are using pip version 21.0.1; however, version 24.0 is available.
+You should consider upgrading via the '/home/ma-user/anaconda3/envs/PyTorch-1.8/bin/python -m pip install --upgrade pip' command.
+Looking in indexes: http://repo.myhuaweicloud.com/repository/pypi/simple/
+Processing ./tabulate-0.8.7-py3-none-any.whl
+time="2026-04-09T07:52:34+08:00" level=info msg="MA_OUTPUT_PRELOAD_SUFFIX: ." file="preload.go:27" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=srt_log_collection
+time="2026-04-09T07:52:34+08:00" level=info msg="modelarts output channel preload to memarts switch is: false." file="preload.go:40" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=srt_log_collection
+Installing collected packages: tabulate
+Successfully installed tabulate-0.8.7
+WARNING: You are using pip version 21.0.1; however, version 24.0 is available.
+You should consider upgrading via the '/home/ma-user/anaconda3/envs/PyTorch-1.8/bin/python -m pip install --upgrade pip' command.
+Found existing installation: enum34 1.1.10
+Uninstalling enum34-1.1.10:
+  Successfully uninstalled enum34-1.1.10
+[ModelArts Service Log]pytorch version is: 1.8.0
+Found existing installation: deep-moxing 1.0.2
+Uninstalling deep-moxing-1.0.2:
+  Successfully uninstalled deep-moxing-1.0.2
+Looking in indexes: http://repo.myhuaweicloud.com/repository/pypi/simple/
+Processing ./deep_moxing-1.0.3-py3-none-any.whl
+Requirement already satisfied: imgaug>=0.4.0 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from deep-moxing==1.0.3) (0.4.0)
+Requirement already satisfied: toml>=0.10.0 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from deep-moxing==1.0.3) (0.10.2)
+Collecting umap-learn>=0.3.9
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/umap-learn/0.5.8/umap_learn-0.5.8-py3-none-any.whl (89 kB)
+Requirement already satisfied: pandas>=0.22.0 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from deep-moxing==1.0.3) (1.1.5)
+Requirement already satisfied: xmltodict>=0.12.0 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from deep-moxing==1.0.3) (0.12.0)
+Requirement already satisfied: scikit-learn>=0.20.0 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from deep-moxing==1.0.3) (0.22.1)
+Requirement already satisfied: opencv-python>=3.3.0.9 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from deep-moxing==1.0.3) (4.1.2.30)
+Requirement already satisfied: Pillow>=3.3.1 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from deep-moxing==1.0.3) (6.2.0)
+Requirement already satisfied: requests>=2.22.0 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from deep-moxing==1.0.3) (2.26.0)
+Requirement already satisfied: numpy>=1.14.5 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from deep-moxing==1.0.3) (1.17.0)
+Requirement already satisfied: dask>=0.17.0 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from deep-moxing==1.0.3) (2021.9.0)
+Requirement already satisfied: fsspec>=0.6.0 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from dask>=0.17.0->deep-moxing==1.0.3) (2021.8.1)
+Requirement already satisfied: partd>=0.3.10 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from dask>=0.17.0->deep-moxing==1.0.3) (1.2.0)
+Requirement already satisfied: pyyaml in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from dask>=0.17.0->deep-moxing==1.0.3) (5.1)
+Requirement already satisfied: toolz>=0.8.2 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from dask>=0.17.0->deep-moxing==1.0.3) (0.11.1)
+Requirement already satisfied: cloudpickle>=1.1.1 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from dask>=0.17.0->deep-moxing==1.0.3) (2.0.0)
+Requirement already satisfied: packaging>=20.0 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from dask>=0.17.0->deep-moxing==1.0.3) (21.0)
+Requirement already satisfied: imageio in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from imgaug>=0.4.0->deep-moxing==1.0.3) (2.9.0)
+Requirement already satisfied: Shapely in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from imgaug>=0.4.0->deep-moxing==1.0.3) (1.7.1)
+Requirement already satisfied: scikit-image>=0.14.2 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from imgaug>=0.4.0->deep-moxing==1.0.3) (0.18.3)
+Requirement already satisfied: six in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from imgaug>=0.4.0->deep-moxing==1.0.3) (1.16.0)
+Requirement already satisfied: matplotlib in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from imgaug>=0.4.0->deep-moxing==1.0.3) (3.4.3)
+Requirement already satisfied: scipy in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from imgaug>=0.4.0->deep-moxing==1.0.3) (1.5.2)
+Requirement already satisfied: pyparsing>=2.0.2 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from packaging>=20.0->dask>=0.17.0->deep-moxing==1.0.3) (2.4.7)
+Requirement already satisfied: pytz>=2017.2 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from pandas>=0.22.0->deep-moxing==1.0.3) (2021.1)
+Requirement already satisfied: python-dateutil>=2.7.3 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from pandas>=0.22.0->deep-moxing==1.0.3) (2.8.2)
+Requirement already satisfied: locket in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from partd>=0.3.10->dask>=0.17.0->deep-moxing==1.0.3) (0.2.1)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from requests>=2.22.0->deep-moxing==1.0.3) (2.0.4)
+Requirement already satisfied: idna<4,>=2.5 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from requests>=2.22.0->deep-moxing==1.0.3) (3.2)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from requests>=2.22.0->deep-moxing==1.0.3) (1.26.6)
+Requirement already satisfied: certifi>=2017.4.17 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from requests>=2.22.0->deep-moxing==1.0.3) (2021.5.30)
+Requirement already satisfied: PyWavelets>=1.1.1 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from scikit-image>=0.14.2->imgaug>=0.4.0->deep-moxing==1.0.3) (1.1.1)
+Requirement already satisfied: tifffile>=2019.7.26 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from scikit-image>=0.14.2->imgaug>=0.4.0->deep-moxing==1.0.3) (2021.8.30)
+Requirement already satisfied: networkx>=2.0 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from scikit-image>=0.14.2->imgaug>=0.4.0->deep-moxing==1.0.3) (2.6.3)
+Requirement already satisfied: kiwisolver>=1.0.1 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from matplotlib->imgaug>=0.4.0->deep-moxing==1.0.3) (1.3.2)
+Requirement already satisfied: cycler>=0.10 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from matplotlib->imgaug>=0.4.0->deep-moxing==1.0.3) (0.10.0)
+Requirement already satisfied: joblib>=0.11 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from scikit-learn>=0.20.0->deep-moxing==1.0.3) (1.0.1)
+Collecting numba>=0.51.2
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/numba/0.56.4/numba-0.56.4-cp37-cp37m-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (3.5 MB)
+Collecting pynndescent>=0.5
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/pynndescent/0.6.0/pynndescent-0.6.0-py3-none-any.whl (73 kB)
+Collecting umap-learn>=0.3.9
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/umap-learn/0.5.7/umap_learn-0.5.7-py3-none-any.whl (88 kB)
+Requirement already satisfied: tqdm in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from umap-learn>=0.3.9->deep-moxing==1.0.3) (4.62.2)
+Requirement already satisfied: importlib-metadata in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from numba>=0.51.2->umap-learn>=0.3.9->deep-moxing==1.0.3) (4.8.1)
+Collecting numpy>=1.14.5
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/numpy/1.21.6/numpy-1.21.6-cp37-cp37m-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (15.7 MB)
+Requirement already satisfied: setuptools in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from numba>=0.51.2->umap-learn>=0.3.9->deep-moxing==1.0.3) (52.0.0.post20210125)
+Collecting llvmlite<0.40,>=0.39.0dev0
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/llvmlite/0.39.1/llvmlite-0.39.1-cp37-cp37m-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (34.6 MB)
+Requirement already satisfied: typing-extensions>=3.6.4 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from importlib-metadata->numba>=0.51.2->umap-learn>=0.3.9->deep-moxing==1.0.3) (3.10.0.2)
+Requirement already satisfied: zipp>=0.5 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from importlib-metadata->numba>=0.51.2->umap-learn>=0.3.9->deep-moxing==1.0.3) (3.5.0)
+Installing collected packages: numpy, llvmlite, numba, pynndescent, umap-learn, deep-moxing
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.17.0
+    Uninstalling numpy-1.17.0:
+      Successfully uninstalled numpy-1.17.0
+  Attempting uninstall: llvmlite
+    Found existing installation: llvmlite 0.31.0
+    Uninstalling llvmlite-0.31.0:
+      Successfully uninstalled llvmlite-0.31.0
+  Attempting uninstall: numba
+    Found existing installation: numba 0.47.0
+    Uninstalling numba-0.47.0:
+      Successfully uninstalled numba-0.47.0
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+moxing-framework 1.17.3 requires enum34>=1.1.6, which is not installed.
+Successfully installed deep-moxing-1.0.3 llvmlite-0.39.1 numba-0.56.4 numpy-1.21.6 pynndescent-0.6.0 umap-learn-0.5.7
+WARNING: You are using pip version 21.0.1; however, version 24.0 is available.
+You should consider upgrading via the '/home/ma-user/anaconda3/envs/PyTorch-1.8/bin/python -m pip install --upgrade pip' command.
+Looking in indexes: http://repo.myhuaweicloud.com/repository/pypi/simple/
+Processing ./modelarts-1.1.6-py2.py3-none-any.whl
+Collecting configparser==3.7.3
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/configparser/3.7.3/configparser-3.7.3-py2.py3-none-any.whl (22 kB)
+Requirement already satisfied: certifi in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from modelarts==1.1.6) (2021.5.30)
+Requirement already satisfied: Pillow in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from modelarts==1.1.6) (6.2.0)
+Requirement already satisfied: python-dateutil in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from modelarts==1.1.6) (2.8.2)
+Requirement already satisfied: six>=1.10 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from modelarts==1.1.6) (1.16.0)
+Collecting semantic-version==2.8.5
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/semantic-version/2.8.5/semantic_version-2.8.5-py2.py3-none-any.whl (15 kB)
+Requirement already satisfied: pandas>=0.24.2 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from modelarts==1.1.6) (1.1.5)
+Collecting esdk-obs-python
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/esdk-obs-python/3.26.2/esdk_obs_python-3.26.2.tar.gz (95 kB)
+Requirement already satisfied: requests>=2.19.1 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from modelarts==1.1.6) (2.26.0)
+Collecting ruamel.yaml==0.16.10
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/ruamel-yaml/0.16.10/ruamel.yaml-0.16.10-py2.py3-none-any.whl (111 kB)
+Collecting inotify==0.2.10
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/inotify/0.2.10/inotify-0.2.10.tar.gz (9.9 kB)
+Collecting urllib3==1.21.1
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/urllib3/1.21.1/urllib3-1.21.1-py2.py3-none-any.whl (131 kB)
+Collecting ephemeral-port-reserve==1.1.1
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/ephemeral-port-reserve/1.1.1/ephemeral_port_reserve-1.1.1-py2.py3-none-any.whl (3.5 kB)
+Collecting nose
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/nose/1.3.7/nose-1.3.7-py3-none-any.whl (154 kB)
+Collecting ruamel.yaml.clib>=0.1.2
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/ruamel-yaml-clib/0.2.8/ruamel.yaml.clib-0.2.8-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.whl (551 kB)
+Requirement already satisfied: pytz>=2017.2 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from pandas>=0.24.2->modelarts==1.1.6) (2021.1)
+Requirement already satisfied: numpy>=1.15.4 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from pandas>=0.24.2->modelarts==1.1.6) (1.21.6)
+Requirement already satisfied: idna<4,>=2.5 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from requests>=2.19.1->modelarts==1.1.6) (3.2)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from requests>=2.19.1->modelarts==1.1.6) (2.0.4)
+Collecting pycryptodome>=3.10.1
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/pycryptodome/3.23.0/pycryptodome-3.23.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (2.3 MB)
+Collecting requests>=2.19.1
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/requests/2.31.0/requests-2.31.0-py3-none-any.whl (62 kB)
+Collecting crcmod>=1.7
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/crcmod/1.7/crcmod-1.7.tar.gz (89 kB)
+Building wheels for collected packages: inotify, esdk-obs-python, crcmod
+  Building wheel for inotify (setup.py): started
+  Building wheel for inotify (setup.py): finished with status 'done'
+  Created wheel for inotify: filename=inotify-0.2.10-py3-none-any.whl size=13445 sha256=7b2a1a895f066d34fde1a1fd059a80776c236363ffa966362f6ec85212ed3c46
+  Stored in directory: /tmp/pip-ephem-wheel-cache-dx47bc0a/wheels/b3/26/2b/60666d0313172cade2b2d4d80b734ef753488495fb47d73e17
+  Building wheel for esdk-obs-python (setup.py): started
+  Building wheel for esdk-obs-python (setup.py): finished with status 'done'
+  Created wheel for esdk-obs-python: filename=esdk_obs_python-3.26.2-py3-none-any.whl size=110126 sha256=0d601963909eac5323f52a6e98cca9ea89dd1af4a05e5566407356366b6751b7
+  Stored in directory: /tmp/pip-ephem-wheel-cache-dx47bc0a/wheels/de/d2/3a/79114e9d4ac05f552c6dbc5be87845bd951f58b316695fc557
+  Building wheel for crcmod (setup.py): started
+  Building wheel for crcmod (setup.py): finished with status 'done'
+  Created wheel for crcmod: filename=crcmod-1.7-cp37-cp37m-linux_x86_64.whl size=36527 sha256=a8dd3d4f5037d44cdde5f418142c4c856d8012c21661e203681c6317b6706506
+  Stored in directory: /tmp/pip-ephem-wheel-cache-dx47bc0a/wheels/93/6d/ec/6eda528d35a0e60a9d0c3baa6d732d2aeb89ca6cc5a83bfb9e
+Successfully built inotify esdk-obs-python crcmod
+Installing collected packages: urllib3, ruamel.yaml.clib, requests, pycryptodome, nose, crcmod, semantic-version, ruamel.yaml, inotify, esdk-obs-python, ephemeral-port-reserve, configparser, modelarts
+  Attempting uninstall: urllib3
+    Found existing installation: urllib3 1.26.6
+    Uninstalling urllib3-1.26.6:
+      Successfully uninstalled urllib3-1.26.6
+  Attempting uninstall: requests
+    Found existing installation: requests 2.26.0
+    Uninstalling requests-2.26.0:
+      Successfully uninstalled requests-2.26.0
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+moxing-pytorch 2.0.0.rc2.efd0eb0b requires urllib3>=1.26.2, but you have urllib3 1.21.1 which is incompatible.
+Successfully installed configparser-3.7.3 crcmod-1.7 ephemeral-port-reserve-1.1.1 esdk-obs-python-3.26.2 inotify-0.2.10 modelarts-1.1.6 nose-1.3.7 pycryptodome-3.23.0 requests-2.31.0 ruamel.yaml-0.16.10 ruamel.yaml.clib-0.2.8 semantic-version-2.8.5 urllib3-1.21.1
+WARNING: You are using pip version 21.0.1; however, version 24.0 is available.
+You should consider upgrading via the '/home/ma-user/anaconda3/envs/PyTorch-1.8/bin/python -m pip install --upgrade pip' command.
+Looking in indexes: http://repo.myhuaweicloud.com/repository/pypi/simple/
+Processing ./moxing_framework-2.3.12-py2.py3-none-any.whl
+Requirement already satisfied: protobuf>=3.10.0 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from moxing-framework==2.3.12) (3.17.3)
+Requirement already satisfied: psutil>=5.4.6 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from moxing-framework==2.3.12) (5.8.0)
+Requirement already satisfied: tqdm in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from moxing-framework==2.3.12) (4.62.2)
+Requirement already satisfied: six in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from moxing-framework==2.3.12) (1.16.0)
+Requirement already satisfied: PyYAML>=3.12 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from moxing-framework==2.3.12) (5.1)
+Requirement already satisfied: certifi in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from moxing-framework==2.3.12) (2021.5.30)
+Requirement already satisfied: Pillow>=3.3.1 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from moxing-framework==2.3.12) (6.2.0)
+Requirement already satisfied: scipy>=1.1.0 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from moxing-framework==2.3.12) (1.5.2)
+Requirement already satisfied: lxml>=4.1.0 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from moxing-framework==2.3.12) (4.6.3)
+Requirement already satisfied: setuptools in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from moxing-framework==2.3.12) (52.0.0.post20210125)
+Requirement already satisfied: esdk-obs-python>=3.25.3 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from moxing-framework==2.3.12) (3.26.2)
+Requirement already satisfied: numpy>=1.16.4 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from moxing-framework==2.3.12) (1.21.6)
+Collecting urllib3>=1.26.2
+  Downloading http://repo.myhuaweicloud.com/repository/pypi/packages/urllib3/2.0.7/urllib3-2.0.7-py3-none-any.whl (124 kB)
+Requirement already satisfied: requests in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from moxing-framework==2.3.12) (2.31.0)
+Requirement already satisfied: pycryptodome>=3.10.1 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from esdk-obs-python>=3.25.3->moxing-framework==2.3.12) (3.23.0)
+Requirement already satisfied: crcmod>=1.7 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from esdk-obs-python>=3.25.3->moxing-framework==2.3.12) (1.7)
+Requirement already satisfied: charset-normalizer<4,>=2 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from requests->moxing-framework==2.3.12) (2.0.4)
+Requirement already satisfied: idna<4,>=2.5 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from requests->moxing-framework==2.3.12) (3.2)
+Installing collected packages: urllib3, moxing-framework
+  Attempting uninstall: urllib3
+    Found existing installation: urllib3 1.21.1
+    Uninstalling urllib3-1.21.1:
+      Successfully uninstalled urllib3-1.21.1
+  Attempting uninstall: moxing-framework
+    Found existing installation: moxing-framework 1.17.3
+    Uninstalling moxing-framework-1.17.3:
+      Successfully uninstalled moxing-framework-1.17.3
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+modelarts 1.1.6 requires urllib3==1.21.1, but you have urllib3 2.0.7 which is incompatible.
+Successfully installed moxing-framework-2.3.12 urllib3-2.0.7
+WARNING: You are using pip version 21.0.1; however, version 24.0 is available.
+You should consider upgrading via the '/home/ma-user/anaconda3/envs/PyTorch-1.8/bin/python -m pip install --upgrade pip' command.
+find requirement file: requirements.txt
+time="2026-04-09T07:53:02+08:00" level=info msg="installing Python dependencies, import file: /home/ma-user/modelarts/user-job-dir/code/requirements.txt" Component=ShellScripts Platform=ModelArts-Service
+[ModelArts Service Log][INFO] exec pip install requirements.txt
+Looking in indexes: http://repo.myhuaweicloud.com/repository/pypi/simple/
+Requirement already satisfied: torch in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from -r /home/ma-user/modelarts/user-job-dir/code/requirements.txt (line 1)) (1.8.0)
+Requirement already satisfied: torchvision in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from -r /home/ma-user/modelarts/user-job-dir/code/requirements.txt (line 2)) (0.9.0)
+Requirement already satisfied: numpy in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from -r /home/ma-user/modelarts/user-job-dir/code/requirements.txt (line 3)) (1.21.6)
+Requirement already satisfied: matplotlib in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from -r /home/ma-user/modelarts/user-job-dir/code/requirements.txt (line 4)) (3.4.3)
+Requirement already satisfied: scikit-learn in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from -r /home/ma-user/modelarts/user-job-dir/code/requirements.txt (line 5)) (0.22.1)
+Requirement already satisfied: pyparsing>=2.2.1 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from matplotlib->-r /home/ma-user/modelarts/user-job-dir/code/requirements.txt (line 4)) (2.4.7)
+Requirement already satisfied: pillow>=6.2.0 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from matplotlib->-r /home/ma-user/modelarts/user-job-dir/code/requirements.txt (line 4)) (6.2.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from matplotlib->-r /home/ma-user/modelarts/user-job-dir/code/requirements.txt (line 4)) (1.3.2)
+Requirement already satisfied: cycler>=0.10 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from matplotlib->-r /home/ma-user/modelarts/user-job-dir/code/requirements.txt (line 4)) (0.10.0)
+Requirement already satisfied: python-dateutil>=2.7 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from matplotlib->-r /home/ma-user/modelarts/user-job-dir/code/requirements.txt (line 4)) (2.8.2)
+Requirement already satisfied: six in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from cycler>=0.10->matplotlib->-r /home/ma-user/modelarts/user-job-dir/code/requirements.txt (line 4)) (1.16.0)
+Requirement already satisfied: scipy>=0.17.0 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from scikit-learn->-r /home/ma-user/modelarts/user-job-dir/code/requirements.txt (line 5)) (1.5.2)
+Requirement already satisfied: joblib>=0.11 in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from scikit-learn->-r /home/ma-user/modelarts/user-job-dir/code/requirements.txt (line 5)) (1.0.1)
+Requirement already satisfied: typing-extensions in /home/ma-user/anaconda3/envs/PyTorch-1.8/lib/python3.7/site-packages (from torch->-r /home/ma-user/modelarts/user-job-dir/code/requirements.txt (line 1)) (3.10.0.2)
+WARNING: You are using pip version 21.0.1; however, version 24.0 is available.
+You should consider upgrading via the '/home/ma-user/anaconda3/envs/PyTorch-1.8/bin/python -m pip install --upgrade pip' command.
+time="2026-04-09T07:53:04+08:00" level=info msg="report event InstallDependenciesSuccess success" file="event.go:112" Command=report Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-09T07:53:04+08:00" level=info msg="training_pid: 302" Component=ShellScripts Platform=ModelArts-Service
+Device      : cpu
+PyTorch ver : 1.8.0
+Data dir    : /home/ma-user/modelarts/inputs/data_url_0/
+Pretrained  : /home/ma-user/modelarts/inputs/pretrained_url_1/
+Output dir  : /home/ma-user/modelarts/outputs/train_url_0/
+Contents    : ['README.roboflow.txt', 'README.dataset.txt', 'train', 'test', 'valid']
+Splits found: ['train', 'valid', 'test']
+Classes     : ['Basal Cell Carcinoma', 'Dermatofibroma', 'Eczema', 'Healthy Skin', 'Herpes', 'Impetigo', 'Keratosis', 'Leprosy', 'Melanocytic Nevi', 'Melanoma', 'Psoriasis', 'Scabies', 'Tinea', 'Warts']
+Sizes       : {'train': 7426, 'valid': 933, 'test': 1165}
+ResNet50 weights loaded ✅
+MobileNetV3 weights loaded ✅
+
+========================================
+Epoch 1/5
+========================================
+time="2026-04-09T08:02:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T08:02:29+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T08:12:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T08:12:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T08:22:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T08:22:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T08:32:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T08:32:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T08:42:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T08:42:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T08:52:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T08:52:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T09:02:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T09:02:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T09:12:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T09:12:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T09:22:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T09:22:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T09:32:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T09:32:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T09:42:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T09:42:29+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T09:52:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T09:52:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T10:02:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T10:02:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T10:12:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T10:12:29+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T10:22:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T10:22:29+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T10:32:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T10:32:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T10:42:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T10:42:29+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T10:52:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T10:52:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+train  Loss: 1.6849  Acc: 0.3777
+time="2026-04-09T11:02:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T11:02:29+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+valid  Loss: 1.3994  Acc: 0.5209
+  ✅ Best model saved (val_acc=0.5209)
+
+========================================
+Epoch 2/5
+========================================
+time="2026-04-09T11:12:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T11:12:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T11:22:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T11:22:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T11:32:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T11:32:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T11:42:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T11:42:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T11:52:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T11:52:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T12:02:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T12:02:29+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T12:12:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T12:12:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T12:22:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T12:22:29+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T12:32:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T12:32:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T12:42:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T12:42:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T12:52:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T12:52:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T13:02:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T13:02:29+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T13:12:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T13:12:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T13:22:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T13:22:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T13:32:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T13:32:29+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T13:42:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T13:42:29+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T13:52:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T13:52:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T13:53:27+08:00" level=info msg="auth file has been updated" file="authentication.go:139" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=srt_log_collection
+time="2026-04-09T13:53:27+08:00" level=info msg="auth file has been updated" file="authentication.go:139" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=train_url
+time="2026-04-09T13:53:27+08:00" level=info msg="auth file has been updated" file="authentication.go:139" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=log_url
+time="2026-04-09T13:53:28+08:00" level=info msg="auth info has been updated" file="authentication.go:162" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=srt_log_collection
+time="2026-04-09T13:53:28+08:00" level=info msg="obs client has been updated" file="upload.go:216" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=srt_log_collection
+time="2026-04-09T13:53:28+08:00" level=warning msg="refresh rclone config failed: enableRclone is false " file="authentication.go:159" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=log_url
+time="2026-04-09T13:53:28+08:00" level=info msg="auth info has been updated" file="authentication.go:162" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=log_url
+time="2026-04-09T13:53:28+08:00" level=info msg="obs client has been updated" file="upload.go:216" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=log_url
+time="2026-04-09T13:53:36+08:00" level=warning msg="refresh rclone config failed: enableRclone is false " file="authentication.go:159" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=train_url
+time="2026-04-09T13:53:36+08:00" level=info msg="auth info has been updated" file="authentication.go:162" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=train_url
+time="2026-04-09T13:53:36+08:00" level=info msg="obs client has been updated" file="upload.go:216" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=train_url
+time="2026-04-09T14:02:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T14:02:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+train  Loss: 1.2782  Acc: 0.5001
+time="2026-04-09T14:12:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T14:12:29+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+valid  Loss: 1.2242  Acc: 0.5198
+
+========================================
+Epoch 3/5
+========================================
+time="2026-04-09T14:22:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T14:22:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T14:32:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T14:32:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T14:42:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T14:42:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T14:52:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T14:52:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T15:02:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T15:02:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T15:12:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T15:12:29+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T15:22:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T15:22:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T15:32:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T15:32:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T15:42:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T15:42:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T15:52:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T15:52:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T16:02:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T16:02:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T16:12:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T16:12:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T16:22:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T16:22:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T16:32:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T16:32:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T16:42:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T16:42:29+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T16:52:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T16:52:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T17:02:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T17:02:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T17:12:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T17:12:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T17:22:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T17:22:29+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+train  Loss: 1.1446  Acc: 0.5469
+valid  Loss: 1.0341  Acc: 0.6109
+  ✅ Best model saved (val_acc=0.6109)
+
+========================================
+Epoch 4/5
+========================================
+time="2026-04-09T17:32:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T17:32:29+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T17:42:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T17:42:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T17:52:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T17:52:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T18:02:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T18:02:29+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T18:12:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T18:12:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T18:22:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T18:22:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T18:32:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T18:32:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T18:42:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T18:42:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T18:52:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T18:52:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T19:02:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T19:02:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T19:12:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T19:12:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T19:22:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T19:22:29+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T19:32:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T19:32:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T19:42:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T19:42:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T19:52:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T19:52:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T19:54:09+08:00" level=info msg="auth file has been updated" file="authentication.go:139" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=train_url
+time="2026-04-09T19:54:09+08:00" level=info msg="auth file has been updated" file="authentication.go:139" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=srt_log_collection
+time="2026-04-09T19:54:09+08:00" level=info msg="auth file has been updated" file="authentication.go:139" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=log_url
+time="2026-04-09T19:54:10+08:00" level=info msg="auth info has been updated" file="authentication.go:162" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=srt_log_collection
+time="2026-04-09T19:54:10+08:00" level=info msg="obs client has been updated" file="upload.go:216" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=srt_log_collection
+time="2026-04-09T19:54:10+08:00" level=warning msg="refresh rclone config failed: enableRclone is false " file="authentication.go:159" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=log_url
+time="2026-04-09T19:54:10+08:00" level=info msg="auth info has been updated" file="authentication.go:162" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=log_url
+time="2026-04-09T19:54:10+08:00" level=info msg="obs client has been updated" file="upload.go:216" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=log_url
+time="2026-04-09T19:54:18+08:00" level=warning msg="refresh rclone config failed: enableRclone is false " file="authentication.go:159" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=train_url
+time="2026-04-09T19:54:18+08:00" level=info msg="auth info has been updated" file="authentication.go:162" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=train_url
+time="2026-04-09T19:54:18+08:00" level=info msg="obs client has been updated" file="upload.go:216" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=train_url
+time="2026-04-09T20:02:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T20:02:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T20:12:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T20:12:29+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T20:22:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T20:22:29+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T20:32:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T20:32:29+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+train  Loss: 1.1106  Acc: 0.5560
+valid  Loss: 1.0763  Acc: 0.6077
+
+========================================
+Epoch 5/5
+========================================
+time="2026-04-09T20:42:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T20:42:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T20:52:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T20:52:29+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T21:02:29+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T21:02:30+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T21:12:30+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T21:12:30+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T21:22:30+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T21:22:30+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T21:32:30+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T21:32:30+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T21:42:30+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T21:42:30+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T21:52:30+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T21:52:30+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T22:02:30+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T22:02:30+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T22:12:30+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T22:12:30+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T22:22:30+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T22:22:30+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T22:32:30+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T22:32:30+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T22:42:30+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T22:42:30+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T22:52:30+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T22:52:30+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T23:02:30+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T23:02:30+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T23:12:30+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T23:12:30+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T23:22:30+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T23:22:30+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T23:32:30+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T23:32:30+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T23:42:30+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T23:42:30+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+train  Loss: 1.0568  Acc: 0.5847
+valid  Loss: 1.0817  Acc: 0.6292
+  ✅ Best model saved (val_acc=0.6292)
+
+Best Val Accuracy: 0.6292
+
+========================================
+POST-TRAINING EVALUATION
+========================================
+Saved: /home/ma-user/modelarts/outputs/train_url_0/training_curves.png
+
+--- Validation Set ---
+time="2026-04-09T23:52:30+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-09T23:52:30+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+Val Accuracy : 0.6292
+Saved: /home/ma-user/modelarts/outputs/train_url_0/confusion_matrix_valid.png
+                      precision    recall  f1-score   support
+
+Basal Cell Carcinoma       0.89      0.70      0.78        70
+      Dermatofibroma       0.78      0.39      0.52        18
+              Eczema       0.38      0.25      0.30        84
+        Healthy Skin       0.51      0.77      0.62        26
+              Herpes       0.68      0.42      0.52        60
+            Impetigo       0.77      0.43      0.56        46
+           Keratosis       0.79      0.84      0.81        80
+             Leprosy       0.84      1.00      0.91        90
+    Melanocytic Nevi       0.88      0.78      0.83        83
+            Melanoma       0.61      0.96      0.74        77
+           Psoriasis       0.41      0.49      0.44        84
+             Scabies       0.74      0.62      0.68        64
+               Tinea       1.00      0.01      0.03        75
+               Warts       0.40      0.88      0.55        76
+
+            accuracy                           0.63       933
+           macro avg       0.69      0.61      0.59       933
+        weighted avg       0.69      0.63      0.60       933
+
+Saved: /home/ma-user/modelarts/outputs/train_url_0/per_class_metrics_valid.png
+
+--- Test Set ---
+time="2026-04-10T00:02:30+08:00" level=info msg="analyzer is diagnosing" file="analyzer.go:305" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-10T00:02:30+08:00" level=info msg="time required for conclude： 0 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+Test Accuracy : 0.6412
+F1 Macro      : 0.6091
+F1 Weighted   : 0.6100
+Saved: /home/ma-user/modelarts/outputs/train_url_0/confusion_matrix_test.png
+                      precision    recall  f1-score   support
+
+Basal Cell Carcinoma       0.87      0.77      0.82       105
+      Dermatofibroma       0.67      0.25      0.36        32
+              Eczema       0.38      0.32      0.35       101
+        Healthy Skin       0.55      0.85      0.67        34
+              Herpes       0.78      0.48      0.60        75
+            Impetigo       0.78      0.52      0.62        56
+           Keratosis       0.89      0.88      0.88       100
+             Leprosy       0.84      1.00      0.92        92
+    Melanocytic Nevi       0.86      0.83      0.84        93
+            Melanoma       0.63      0.94      0.75        94
+           Psoriasis       0.38      0.47      0.42        96
+             Scabies       0.66      0.66      0.66        80
+               Tinea       0.60      0.03      0.05       113
+               Warts       0.43      0.91      0.59        94
+
+            accuracy                           0.64      1165
+           macro avg       0.67      0.64      0.61      1165
+        weighted avg       0.67      0.64      0.61      1165
+
+Saved: /home/ma-user/modelarts/outputs/train_url_0/per_class_metrics_test.png
+
+All files saved to: /home/ma-user/modelarts/outputs/train_url_0/ ✅
+
+Done! ✅
+time="2026-04-10T00:04:52+08:00" level=info msg="the run_train script is exited with 0" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="command is exit with 0" file="process.go:203" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="the task will restart after terminating the user processes" file="process.go:405" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="kill user processes successfully" file="process.go:478" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="skip clear memarts socket dir" file="process.go:502" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="clear profiler file skip" file="process.go:510" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="detected pattern: map[]\n" file="process.go:228" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="device log export result is false" file="listener.go:331" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="current job is not npu job, skip parse ascend log" file="ascend_log_handler.go:216" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="terminate all system auxiliary routines" file="common.go:30" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="event listener(name: startAndWait) sync=false exited" file="controller.go:170" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="event(name: UserProcessTerminatedEvent, msg: ) is being handled, len: 0" file="controller.go:122" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="received terminated-state from task worker-0, user process exit code: 0" file="handler.go:256" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="all task worker exited with 0, will complete training" file="handler.go:631" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="auxiliary routine(name: TaskCoreDump) exited" file="listener.go:1175" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="event listener(name: SystemAuxiliaryRoutines) sync=false exited" file="controller.go:170" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="done handling event(name: UserProcessTerminatedEvent, msg: ), started listeners: [instructAllOK]" file="controller.go:136" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="event listener(name: instructAllOK) sync=false started" file="controller.go:173" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="event listener(name: instructAllOK) sync=false exited" file="controller.go:170" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="event(name: InstructedAllExitEvent, msg: ) is being handled, len: 0" file="controller.go:122" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="the number of event listener is zero, registration is not required" file="controller.go:157" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="done handling event(name: InstructedAllExitEvent, msg: ), will exit with 0" file="controller.go:127" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="context is closing, shutting down the http server" file="server.go:51" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="watch watch core dump listener is exiting" file="listener.go:894" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="event listener(name: watchCoreDump) sync=false exited" file="controller.go:170" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="watch switch_nic_config listener is exiting" file="listener.go:1458" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="event listener(name: watchSwitchNICConfig) sync=false exited" file="controller.go:170" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="http server shutdown successfully" file="server.go:58" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="event listener(name: listenAndServe) sync=false exited" file="controller.go:170" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="mind_recover server exiting" file="listener.go:1359" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="dynamic profiling config file listener is exiting" file="listener.go:994" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="event listener(name: watchDynamicProfiling) sync=false exited" file="controller.go:170" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="dynamic profiling config watcher has exited" file="watcher.go:74" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="watch user process hang status listener is exiting" file="listener.go:830" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="event listener(name: watchUserProcessHangStatus) sync=false exited" file="controller.go:170" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="event listener(name: StartMindRecoverServer) sync=false exited" file="controller.go:170" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="controller exit with 0" file="controller.go:150" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="the post-training script(ma-post-end.sh) not found on env, bootfile dir, or code dir, skipping execution" file="run_train.go:1282" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="post runtime info collection started" file="run_train.go:1450" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="skip collecting ascend_env_info, reason: not an ascend job, no need to collect" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="skip collecting nfs_metrics, reason: MA_NFS_MOUNT_VOLUMES env is not found" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="skip collecting gpu_info, reason: not a gpu job" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="skip collecting ib_stats, reason: not an infiniband job" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="skip collecting npu_device_log, reason: not an NPU job, no need to collect" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="skip collecting nvlink_status, reason: not a gpu job" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=warning msg="failed to copy rank table file,source path:/user/config/jobstart_hccl.json" file="collector.go:1237" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="skip collecting rank_table_file, reason: empty results" file="collector.go:198" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:52+08:00" level=info msg="skip collecting npu_ecc_info, reason: not a NPU job" file="collector.go:194" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:53+08:00" level=info msg="post runtime info collection finished" file="run_train.go:1466" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:53+08:00" level=info msg="report event TrainingExit success" file="event.go:112" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:53+08:00" level=info msg="bootstrap is exiting with exit code 0" file="bootstrap.go:359" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:53+08:00" level=info msg="retCode 0 has been written to the retCode file /home/ma-user/modelarts/retCode" file="bootstrap.go:340" Command=bootstrap/run Component=ma-training-toolkit Container=modelarts-training Platform=ModelArts-Service
+time="2026-04-10T00:04:53+08:00" level=info msg="retcode file already exists" file="analyzer.go:291" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-10T00:04:53+08:00" level=info msg="analyzer has exited" file="analyzer.go:309" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-10T00:04:53+08:00" level=info msg="[sidecar] training is completed" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-10T00:04:53+08:00" level=info msg="[sidecar] last diagnosis before exit" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-10T00:04:53+08:00" level=info msg="skip read knowledge file on path: /home/ma-user/training/runtime-scripts-v2/sidecar-container/diagnose_knowledge.json" file="analyzer.go:182" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-10T00:04:53+08:00" level=info msg="analyzer knowledge comes from [/home/ma-user/training/runtime-scripts-v2/sidecar-container/diagnose_knowledge_default.json]" file="analyzer.go:172" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-10T00:04:53+08:00" level=info msg="analyzer requires diagnosing once" file="analyzer.go:273" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-10T00:04:53+08:00" level=info msg="time required for conclude： 1 ms" file="analyzer.go:411" Command=analyze Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service
+time="2026-04-10T00:04:53+08:00" level=info msg="[sidecar] stop toolkit_obs_upload_by_channels_pid = 743 by signal SIGTERM" Component=ShellScripts Platform=ModelArts-Service
+time="2026-04-10T00:04:54+08:00" level=info msg="obs client ctx is closed" file="upload.go:206" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=train_url
+time="2026-04-10T00:04:54+08:00" level=info msg="the final upload is in progress..." file="upload.go:294" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=train_url
+time="2026-04-10T00:04:54+08:00" level=info msg="start upload output at 2026-04-10T00:04:54+08:00" file="upload.go:297" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=train_url
+time="2026-04-10T00:04:54+08:00" level=info msg="the final upload is in progress..." file="upload.go:294" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=srt_log_collection
+time="2026-04-10T00:04:54+08:00" level=info msg="start upload output at 2026-04-10T00:04:54+08:00" file="upload.go:297" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=srt_log_collection
+time="2026-04-10T00:04:54+08:00" level=info msg="obs client ctx is closed" file="upload.go:206" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=log_url
+time="2026-04-10T00:04:54+08:00" level=info msg="the final upload is in progress..." file="upload.go:294" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=log_url
+time="2026-04-10T00:04:54+08:00" level=info msg="start upload output at 2026-04-10T00:04:54+08:00" file="upload.go:297" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=log_url
+time="2026-04-10T00:04:54+08:00" level=info msg="obs client ctx is closed" file="upload.go:206" Command=obs/upload_by_channels Component=ma-training-toolkit Container=modelarts-training-sidecar Platform=ModelArts-Service Task=srt_log_collection
